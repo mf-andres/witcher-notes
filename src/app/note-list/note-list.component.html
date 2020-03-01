@@ -1,0 +1,6 @@
+<div>
+    <h2>Notas</h2>
+    <ul>
+        <li *ngFor="let note of notes"><a [routerLink]="['/note',note.name]">{{note.name}}</a></li>
+    </ul>
+</div>

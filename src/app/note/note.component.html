@@ -1,0 +1,23 @@
+<div>
+    <h2>Nota: {{name}}</h2>
+
+    <h3>Acordes</h3>
+    <ul>
+        <li *ngFor="let chord of chords"><a [routerLink]="['/chord', name + chord]">{{chord}}</a></li>
+    </ul>
+
+    <h3>Escalas</h3>
+    <ul>
+        <li *ngFor="let scale of scales">
+            <a [routerLink]="['/scale', name + scale]">{{scale}}</a>
+        </li>
+    </ul>
+
+    <h3>Tonalidades</h3>
+    <ul>
+        <li *ngFor="let tonality of tonalities">
+            <a [routerLink]="['/tonality', name + tonality]">{{tonality}}</a>
+        </li>
+    </ul>
+
+</div>

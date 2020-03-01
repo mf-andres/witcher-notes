@@ -1,0 +1,9 @@
+<div>
+    <h2>Tonalidad: {{name}}</h2>
+    <h3>Acordes:</h3>
+    <ol type="I">
+        <li *ngFor="let chord of chords">
+            <a [routerLink]="['/chord', chord]">{{chord}}</a>
+        </li>
+    </ol>
+</div>

@@ -1,0 +1,9 @@
+<div>
+    <h2>Acorde: {{name}}</h2>
+    <h3>Notas:</h3>
+    <ul>
+        <li *ngFor="let note of notes">
+            <a [routerLink]="['/note', note]">{{note}}</a>
+        </li>
+    </ul>
+</div>
