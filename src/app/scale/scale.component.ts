@@ -11,6 +11,17 @@ export class ScaleComponent implements OnInit {
 
   name: string;
   notes: [string];
+  scaleOnGuitar;
+  strings;
+  frets;
+
+  is_note_in_scale(fret: number, string: number){
+    return this.scaleOnGuitar[fret][string][1] == true
+  }
+
+  is_note_tonic(fret: number, string: number) {
+    return this.scaleOnGuitar[fret][string][2] == true
+  }
 
   constructor(
     private tallNotesService: TallNotesServiceService,
@@ -22,6 +33,8 @@ export class ScaleComponent implements OnInit {
       this.name = params.get('name')
     } )
     this.notes = this.tallNotesService.getScaleNotes(this.name)
+    this.scaleOnGuitar = this.tallNotesService.getScaleOnGuitar(this.name)
+    this.strings = Array(6).fill(1).map((x,i)=>i)
+    this.frets = Array(12).fill(1).map((x,i)=>i + 1)
   }
-
 }

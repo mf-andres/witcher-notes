@@ -1,6 +1,21 @@
 # WitcherNote
 
+WithcherNote es una aplicación web que permite obtener información musical diversa. Su objetivo es servir de apoyo durante el estudio de la teoría musical y durante la composición.
+
+Permite:
+
+* Obtener las notas que componen un acorde
+* Obtener las notas que componen una escala
+* Obtener los acordes de una tonalidad basada en una de los modos griegos
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
+
+## TODO
+
+* Refactorizar el código
+* Implementar impresión de una escala en el mástil de la guitarra
+* Implementar impresión de un acorde en el mástil de la guitarra
+* Desplegar en github
 
 ## Development server
 

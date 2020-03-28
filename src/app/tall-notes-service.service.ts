@@ -19,4 +19,8 @@ export class TallNotesServiceService {
   getTonalityNotes(tonality: string) {
     return tallNotes['tonalities'][tonality]
   }
+
+  getScaleOnGuitar(scale: string) {
+    return tallNotes['scales_on_guitar'][scale]
+  }
 }

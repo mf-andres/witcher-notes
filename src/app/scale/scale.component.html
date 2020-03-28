@@ -6,4 +6,26 @@
             <a [routerLink]="['/note', note]">{{note}}</a>
         </li>
     </ul>
+
+
+    {{scaleOnGuitar}}
+    {{scaleOnGuitar.values}}
+    {{scaleOnGuitar.keys}}
+
+
+
+    <h3>En la guitarra:</h3>
+    <div style="overflow-x:auto;">
+        <table>
+            <tr *ngFor="let string of strings">
+                 <td [ngClass]="{ 'not_in_scale': true,
+                                  'in_scale': is_note_in_scale(fret, string), 
+                                  'tonic': is_note_tonic(fret, string)}" 
+                     *ngFor="let fret of frets">
+                    {{scaleOnGuitar[fret][string][0]}}
+                </td>
+            </tr>
+        </table>
+    </div>
+
 </div>

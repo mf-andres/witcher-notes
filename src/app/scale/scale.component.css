@@ -1,0 +1,16 @@
+table, th, td {
+    border: 1px solid black;
+  }
+
+
+.not_in_scale {
+  background-color: #c7c7c7c7;
+}
+
+.in_scale {
+  background-color: #40ff00;
+}
+
+.tonic {
+  background-color: #20ffbc;
+}

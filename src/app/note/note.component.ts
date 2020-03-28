@@ -19,21 +19,21 @@ export class NoteComponent implements OnInit {
   scales = [
     "jonica",
     "dorica",
-    "frigio",
-    "lidio",
-    "mixolidio",
-    "eolico",
-    "locrio"
+    "frigia",
+    "lidia",
+    "mixolidia",
+    "eolica",
+    "locria"
   ]
 
   tonalities = [
     "jonica",
     "dorica",
-    "frigio",
-    "lidio",
-    "mixolidio",
-    "eolico",
-    "locrio"
+    "frigia",
+    "lidia",
+    "mixolidia",
+    "eolica",
+    "locria"
   ]
 
   constructor(private route: ActivatedRoute) { }
