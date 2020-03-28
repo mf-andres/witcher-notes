@@ -13,7 +13,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "docs/",
+            "aot": true,
+            "outputPath": "dist/witcher-note",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -49,6 +50,10 @@
                   "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
                 }
               ]
             }
@@ -112,8 +117,16 @@
               "devServerTarget": "witcher-note:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "witcher-note"
+    }
+  },
+  "defaultProject": "witcher-note",
+  "cli": {
+    "analytics": "c7641065-3f3c-4dbe-8f77-65a15babbed2"
+  }
 }
